@@ -147,6 +147,32 @@
         </div>
     </footer>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const contactForm = document.getElementById("contact-form");
+    
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+    
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+    
+          const phoneNumber = "56984716060"; // <-- cambia a tu número
+    
+          const whatsappMessage = `Hola, soy ${name} (${email}).\n\n${message}`;
+          const encodedMessage = encodeURIComponent(whatsappMessage);
+          const whatsappURL = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    
+          window.open(whatsappURL, '_blank');
+    
+          contactForm.reset();
+        });
+      }
+    });
+    </script>
+    
     <script src="products.js"></script>
     <script src="main.js"></script>
 </body>
