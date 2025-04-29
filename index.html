@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos Automotrices</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Catálogo<span>A&C</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Productos de Calidad para tu Automóvil</h2>
+            <p>Descubre nuestra amplia gama de productos de las mejores marcas: Arexons, Ricci, Svitol y Wizzy</p>
+            <a href="#productos" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section id="marcas" class="brands">
+        <h2>Nuestras Marcas</h2>
+        <div class="brands-container">
+            <div class="brand-card">
+                <div class="brand-logo">Arexons</div>
+                <p>Productos de alta calidad para el mantenimiento de tu vehículo.</p>
+            </div>
+            <div class="brand-card">
+                <div class="brand-logo">Ricci</div>
+                <p>Aromatizantes premium.</p>
+            </div>
+            <div class="brand-card">
+                <div class="brand-logo">Svitol</div>
+                <p>Especialistas en lubricantes y productos técnicos.</p>
+            </div>
+            <div class="brand-card">
+                <div class="brand-logo">Wizzy</div>
+                <p>Productos de limpieza premium e innovadoras para el cuidado automotriz..</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <h2>Catálogo de Productos</h2>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="brand-filter">Marca:</label>
+                <select id="brand-filter">
+                    <option value="all">Todas</option>
+                    <option value="arexons">Arexons</option>
+                    <option value="ricci">Ricci</option>
+                    <option value="svitol">Svitol</option>
+                    <option value="wizzy">Wizzy</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="category-filter">Categoría:</label>
+                <select id="category-filter">
+                    <option value="all">Todas</option>
+                    <option value="aditivos">Aditivos</option>
+                    <option value="lubricantes">Lubricantes</option>
+                    <option value="limpieza_de_motor">Limpieza de Motor</option>
+                    <option value="cuidado_exterior">Cuidado Exterior</option>
+                    <option value="limpieza_interior">Limpieza Interior</option>
+                    <option value="aromatizantes">Aromatizantes</option>
+                    <option value="accesorios_de_limpieza">Accesorios de Limpieza</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" placeholder="Nombre del producto...">
+            </div>
+        </div>
+        
+        <div id="products-container" class="products-container">
+            <!-- Products will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: Despacho a domicilio por toda la Region Metropolitana</p>
+                <p><i class="fas fa-phone"></i> Teléfono: (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@autocatalogo.com</p>
+            </div>
+            <div class="contact-form">
+                <h3>Envíanos un Mensaje</h3>
+                <form id="contact-form">
+                  <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn">Enviar</button>
+                </form>
+              </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Catálogo<span>A&C</span></h2>
+                <p>Tu tienda de confianza para productos automotrices</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#marcas">Marcas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Catálogo Xion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
