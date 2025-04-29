@@ -83,19 +83,19 @@ if (contactForm) {
     const message = document.getElementById("message").value.trim();
 
     // Tu número de WhatsApp en formato internacional (ej: +56912345678 sin espacios)
-    const phoneNumber = "56984716060"; 
+    //const phoneNumber = "56984716060"; 
 
     // Crear el texto del mensaje
-    const whatsappMessage = `Hola, quiero hablar con ustedes para: `;
+    //const whatsappMessage = `Hola, quiero hablar con ustedes para: `;
 
     // Codificar para URL
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+    //const encodedMessage = encodeURIComponent(whatsappMessage);
 
     // Crear enlace de WhatsApp
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    //const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     // Abrir WhatsApp
-    window.open(whatsappURL, '_blank');
+    //window.open(whatsappURL, '_blank');
 
     contactForm.reset();
   });
