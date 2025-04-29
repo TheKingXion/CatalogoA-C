@@ -168,7 +168,7 @@ const products = [
         brand: "svitol",
         category: "lubricantes",
         price: 0,
-        description: "Aromatizante con fragancia fresca de manzana verde.",
+        description: "Protege y mejora el contacto en sistemas eléctricos.",
         image: "assets/img/19.png"
     },
     {
