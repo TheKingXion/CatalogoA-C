@@ -139,7 +139,7 @@ const products = [
         id: 16,
         name: "ADITIVO ACEITE LIMPIA MOTORES 300 ML",
         brand: "arexons",
-        category: "aditivos ",
+        category: "aditivos",
         price: 0,
         description: "Limpia el motor desde el interior antes de un cambio de aceite.",
         image: "assets/img/16.png"
@@ -148,7 +148,7 @@ const products = [
         id: 17,
         name: "ADITIVO DIESEL TRATAMIENTO DPF 325 ML",
         brand: "arexons",
-        category: "aditivos ",
+        category: "aditivos",
         price: 0,
         description: "ptimiza el sistema de filtro de partículas diésel (DPF).",
         image: "assets/img/17.png"
@@ -157,7 +157,7 @@ const products = [
         id: 18,
         name: "ADITIVO DIESEL DISPERSANTE DE AGUA 325 ML",
         brand: "arexons",
-        category: "aditivos ",
+        category: "aditivos",
         price: 0,
         description: "Elimina el agua del combustible diésel y protege el motor.",
         image: "assets/img/18.png"
